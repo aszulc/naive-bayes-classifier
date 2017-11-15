@@ -1,0 +1,30 @@
+{
+  "name": "naive-bayes-classifier",
+  "version": "1.0.0",
+  "description": "Naive Bayes Classifier",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "flow": "flow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aszulc/naive-bayes-classifier.git"
+  },
+  "author": "aszulc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aszulc/naive-bayes-classifier/issues"
+  },
+  "homepage": "https://github.com/aszulc/naive-bayes-classifier#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^4.11.0",
+    "flow-bin": "^0.59.0",
+    "jest": "^21.2.1",
+    "jsdoc": "^3.5.5"
+  }
+}
