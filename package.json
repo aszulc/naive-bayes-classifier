@@ -6,9 +6,10 @@
   "scripts": {
     "build": "babel src/ -d lib/",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "flow": "flow",
-    "lint": "echo \"lint hyhy\""
+    "test": "node_modules/.bin/jest",
+    "flow": "node_modules/.bin/flow",
+    "lint": "node_modules/.bin/eslint -c .eslintrc ./ --ignore-path .eslintignore",
+    "docs": "node_modules/.bin/jsdoc -c .jsdoc.json --verbose"
   },
   "repository": {
     "type": "git",
@@ -22,9 +23,15 @@
   "homepage": "https://github.com/aszulc/naive-bayes-classifier#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
     "flow-bin": "^0.59.0",
     "jest": "^21.2.1",
     "jsdoc": "^3.5.5"
